@@ -3,7 +3,8 @@ Power Platform 環境間のソリューション移行ツールです。
 複数環境からのアンマネージドソリューションを非同期的にダウンロードし、ターゲット環境へのソリューションのインポートをPowerShell で実行します。
 エクスポート用のPowerShell スクリプトとインポート用のPowerShell スクリプトを分けているので、エクスポート後、本当に移行したいソリューションのみ残してからエクポート用のPowerShell を実行することができます。
 
-![移行元テナント](https://github.com/user-attachments/assets/82557d9d-099c-4c0f-b808-55fb3001750f)
+![移行元テナント (1)](https://github.com/user-attachments/assets/b796dd76-c4ef-43a3-8014-1b19226cecbd)
+
 
 ## ダウンロード
 PowerShell スクリプトで作成されています。[リリース](https://github.com/geekfujiwara/EnvSolutionMigration/releases)よりダウンロードできます。
