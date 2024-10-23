@@ -18,22 +18,20 @@ PowerShell スクリプトで作成されています。[リリース](https://g
 * [Power Platfform CLI](https://learn.microsoft.com/ja-jp/power-platform/developer/cli/introduction?tabs=windows) を利用します。
 * 事前に[Visual Studio Code](https://code.visualstudio.com/) に[Power Platform Tools](https://learn.microsoft.com/ja-jp/power-apps/developer/data-platform/tools/devtools-install) をインストールしてご利用ください。
 * Power Platform 環境のシステム管理者権限が必要です。
-* エクスポート元の環境名に[2バイト文字](https://kotobank.jp/word/2%E3%81%B0%E3%81%84%E3%81%A8%E6%96%87%E5%AD%97-3215469)が入っているとエラーになります。半角に環境名を変更してください。
 * Auth profile は以下のように作成、名前を付けます。移行元のAuth profile は `OldAdmin` という名前にし、移行先のAuth profile は`NewAdmin` とします。
 
 https://github.com/user-attachments/assets/3d7381f0-4c34-4034-a44e-ebef1f3817b8
 
 ### エクスポート `Solution-export.ps1`
+* エクスポート元の環境名に[2バイト文字](https://kotobank.jp/word/2%E3%81%B0%E3%81%84%E3%81%A8%E6%96%87%E5%AD%97-3215469)が入っているとエラーになります。半角に環境名を変更してください。
 
+
+
+### インポート `Solution-import.ps1`
 * `$TargetEnvId` には移行先のターゲット環境の環境ID を設定します。 以下より確認できます。
-
-移行先環境の[Power Apps のMaker ポータル](https://make.powerapps.com/)に移動します。
-
-開発者リソースを開きます。
-![image](https://github.com/user-attachments/assets/a922e7cc-9c90-484e-926a-196561d71817)
-
-以下に環境IDがあります。
-![image](https://github.com/user-attachments/assets/cb98e4ad-4bb3-440e-b825-ab11e63dfaa3)
+1. 移行先環境の[Power Apps のMaker ポータル](https://make.powerapps.com/)に移動します。
+2. 開発者リソースを開きます。 ![image](https://github.com/user-attachments/assets/a922e7cc-9c90-484e-926a-196561d71817)
+3. 以下に環境IDがあります。 ![image](https://github.com/user-attachments/assets/cb98e4ad-4bb3-440e-b825-ab11e63dfaa3)
 
 
 ## 推奨事項
