@@ -67,6 +67,19 @@ $envs = $envs  | Where-Object { $_.Type -ne "Teams"} ## 環境タイプが Teams
 > [!Note]
 > エクスポート対象外とする環境を設定することでエクスポート時間を短縮することができます。
 
+## 注意事項
+BPF (ビジネスプロセスフロー) のプロセスはソリューションに入っているのに、テーブルがソリューションに入っていない場合、エクスポートが失敗します。テーブルも含めるようにしてください。
+```
+指定した理由: Failed to export Business Process “KB-BPF” because solution does not include corresponding Business Process entity “mskk_kbbpf”. If this is a newly created Business Process in Draft state, activate it once to generate the Business Process entity and include it in the solution. For more information, see http://support.microsoft.com/kb/4337537.
+Microsoft PowerPlatform CLI
+バージョン: 1.35.1+g0c2637a
+オンライン ドキュメント: https://aka.ms/PowerPlatformCLI
+フィードバック、提案、問題: https://github.com/microsoft/powerplatform-build-tools/discussions
+
+エラー: The async operation completed with a statuscode of Failed.
+```
+
+このように、出力結果を注意深く確認し、正しくソリューションがエクスポート、インポートできているかを確認ください。
 
 以上
 
