@@ -44,7 +44,8 @@ https://github.com/user-attachments/assets/3d7381f0-4c34-4034-a44e-ebef1f3817b8
 ## 手順
 
 1. `Solution-export.ps1` を実行します。対象とした環境のアンマネージドソリューションがエクスポートされます。
-2. そのPowerShell スクリプトがあるフォルダに自動で作成される `ExportedSolutions` フォルダにソリューションが保存されます。
+2. そのPowerShell スクリプトがあるフォルダに自動で作成される `ExportedSolutions` フォルダにソリューションが保存されます。![image](https://github.com/user-attachments/assets/7656fa94-c61d-4ba3-a76c-86070079d553)
+
 3. `ExportedSolutions` フォルダにて、移行したいソリューションファイルのみを残し、その他は削除します。
 4. `Solution-import.ps1` を実行します。
 5.  インポートが実行され、ターゲット環境にソリューション移行が行われます。
