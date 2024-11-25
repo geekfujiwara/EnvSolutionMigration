@@ -22,12 +22,12 @@ PowerShell スクリプトで作成されています。[エクスポート](htt
 
 https://github.com/user-attachments/assets/3d7381f0-4c34-4034-a44e-ebef1f3817b8
 
-### エクスポート `[Solution-export.ps1](https://github.com/geekfujiwara/EnvSolutionMigration/blob/main/Solution-export.ps1)`
+### エクスポート `Solution-export.ps1`
 * エクスポート元の環境名に[2バイト文字](https://kotobank.jp/word/2%E3%81%B0%E3%81%84%E3%81%A8%E6%96%87%E5%AD%97-3215469)が入っているとエラーになります。半角に環境名を変更してください。
 
 
 
-### インポート `[Solution-import.ps1](https://github.com/geekfujiwara/EnvSolutionMigration/blob/main/Solution-import.ps1)`
+### インポート `Solution-import.ps1`
 * `$TargetEnvId` には移行先のターゲット環境の環境ID を設定します。 以下より確認できます。
 1. 移行先環境の[Power Apps のMaker ポータル](https://make.powerapps.com/)に移動します。
 2. 開発者リソースを開きます。 ![image](https://github.com/user-attachments/assets/a922e7cc-9c90-484e-926a-196561d71817)
