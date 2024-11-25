@@ -4,7 +4,7 @@
 #>
 <# 以下にパラメータを設定します。 #>
 $TargetAdminName = "NewAdmin" ## ターゲット環境にソリューションをインポートするユーザーのAUTH PROFILE名を設定 
-$TargetEnvId = "f5c11d6c-f52f-e890-b10e-c6bb217dc705" ## 環境IDを設定 
+$TargetEnvId = "xxxxxx-xxxx-xxxx-b10e-c6bb217dc705" ## 環境IDを設定 
 $AsyncMinites = 10 ##  非同期待機時間。分単位で指定。超えるとタイムアウトになる。
 $ExportFolderName = "ExportedSolutions" ## ソリューション保存先のフォルダ名を指定。ps1ファイルと同じレベルに自動的にフォルダは作成される。
 <# パラメータここまで。 #>
